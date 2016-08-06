@@ -4,9 +4,9 @@
     <div class="ui middle aligned center aligned grid">
       <div class="five wide column">
         <h2 class="ui teal image header">
-          <img src="./../../assets/logo.png" class="image">
+
           <div class="content">
-            Signup
+            <h1>Signup</h1>
           </div>
         </h2>
         <form class="ui large form">
@@ -35,7 +35,7 @@
                 <input type="password" name="password" class="error"   v-model="repassword" placeholder="Re-Password">
               </div>
             </div>
-            <div class="ui fluid large teal submit button" @click="signup(name, email, password)">Signup</div>
+            <div class="ui fluid large teal submit button" @click="signup(name, email, password)"><h1>Signup</h1></div>
           </div>
 
           <div class="ui error message"></div>

@@ -6,7 +6,7 @@
         <h2 class="ui teal image header">
 
           <div class="content">
-            เข้าสู่ระบบ
+            <h1>เข้าสู่ระบบ</h1>
           </div>
         </h2>
         <form class="ui large form">
@@ -23,7 +23,7 @@
                 <input type="password" name="password" v-model="password" placeholder="รหัสผ่าน">
               </div>
             </div>
-            <div class="ui fluid large teal submit button" @click="loginSuccess = login(username, password)">Login</div>
+            <div class="ui fluid large teal submit button" @click="loginSuccess = login(username, password)"><h1>Login</h1></div>
           </div>
 
           <div class="ui error message"></div>
@@ -31,7 +31,7 @@
         </form>
 
         <div class="ui message">
-          สมาชิคใหม่? <a  v-link="{path:'/signup'}">สมัคร</a>
+          <span>สมาชิกใหม่?</span> <a  v-link="{path:'/signup'}">สมัคร</a>
         </div>
       </div>
     </div>
@@ -65,5 +65,6 @@ export default {
   }
 }
 </script>
-
+<style>
+span{ font-size: 24px}
 </style>

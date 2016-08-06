@@ -312,10 +312,10 @@ export default {
   }
 
   .message-text {
-    font-size: 20px !important;
+    font-size: 24px !important;
   }
   .message-name {
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: bold !important;
   }
 </style>

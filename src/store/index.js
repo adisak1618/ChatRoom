@@ -6,6 +6,7 @@ import * as event from './event/index'
 Vue.use(Vuex)
 
 const state = {
+  name: '',
   authen: false,
   token: '',
   count: 0,

@@ -25,6 +25,7 @@ export const login = (store, email, password) => {
     if (data.success === true && status.status === 200) {
       console.log(data)
       store.dispatch('LOGIN_SUCCESS')
+      store.dispatch('SET_NAME', data.name)
       window.location = '/#!/topics'
       localStorage.setItem('token', data.token)
       localStorage.setItem('name', data.name)
@@ -34,6 +35,10 @@ export const login = (store, email, password) => {
       return false
     }
   })
+}
+
+export const setName = (store, name) => {
+  store.dispatch('SET_NAME', name)
 }
 
 export const signup = (store, name, email, password) => {
