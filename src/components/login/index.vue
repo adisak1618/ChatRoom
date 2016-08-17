@@ -23,7 +23,7 @@
                 <input type="password" name="password" v-model="password" placeholder="รหัสผ่าน">
               </div>
             </div>
-            <div class="ui fluid large teal submit button" @click="loginSuccess = login(username, password)"><h1>Login</h1></div>
+            <div class="ui fluid large teal submit button" @click="loginSuccess = login(username, password)"><h1>ลงชื่อเข้าใช้</h1></div>
           </div>
 
           <div class="ui error message"></div>

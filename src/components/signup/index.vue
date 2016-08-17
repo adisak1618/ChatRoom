@@ -6,7 +6,7 @@
         <h2 class="ui teal image header">
 
           <div class="content">
-            <h1>Signup</h1>
+            <h1>สมัครสมาชิก</h1>
           </div>
         </h2>
         <form class="ui large form">
@@ -14,28 +14,28 @@
             <div class="field">
               <div class="ui left icon input">
                 <i class="user icon"></i>
-                <input type="text" name="Name" v-model="name" placeholder="Your name">
+                <input type="text" name="Name" v-model="name" placeholder="ชื่อ">
               </div>
             </div>
             <div class="field">
               <div class="ui left icon input">
                 <i class="user icon"></i>
-                <input type="text" name="email" v-model="email" placeholder="E-mail address">
+                <input type="text" name="email" v-model="email" placeholder="อีเมลย์">
               </div>
             </div>
             <div class="field" v-bind:class="{ 'error': passwordNotMatch }">
               <div class="ui left icon input">
                 <i class="lock icon"></i>
-                <input type="password" name="password" v-bind:class="{ 'error': false}" v-model="password" placeholder="Password">
+                <input type="password" name="password" v-bind:class="{ 'error': false}" v-model="password" placeholder="รหัสผ่าน">
               </div>
             </div>
             <div class="field" v-bind:class="{ 'error': passwordNotMatch }">
               <div class="ui left icon input red">
                 <i class="lock icon"></i>
-                <input type="password" name="password" class="error"   v-model="repassword" placeholder="Re-Password">
+                <input type="password" name="password" class="error"   v-model="repassword" placeholder="ใส่รหัสผ่านอีกครั้ง">
               </div>
             </div>
-            <div class="ui fluid large teal submit button" @click="signup(name, email, password)"><h1>Signup</h1></div>
+            <div class="ui fluid large teal submit button" @click="signup(name, email, password)"><h1>สมัครเลย!</h1></div>
           </div>
 
           <div class="ui error message"></div>

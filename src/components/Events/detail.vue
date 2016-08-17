@@ -116,11 +116,12 @@
   </div>
 </template>
 <script>
+import { BASE_URL } from './../../const'
 import * as event from './../../actions/event'
 import $ from 'jquery'
 import io from 'socket.io-client'
 import { sticker } from './../../../sticker.config'
-let socket = io('188.166.236.75:3000')
+let socket = io(BASE_URL)
 export default {
   data () {
     return {

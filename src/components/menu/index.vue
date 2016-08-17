@@ -2,7 +2,8 @@
   <div>
     <div class="ui large top menu transition visible">
       <div class="ui container">
-        <a class="item" v-link="{ path: '/'}" v-bind:class="{ 'activelink': $route.path === '/'}"><i class="home icon"></i>หน้าหลัก</a>
+        <a class="item" href="http://pbl01.sit.kmutt.ac.th/#/"><i class="home icon"></i>หน้าหลัก</a>
+        <a class="item" v-link="{ path: '/'}" v-bind:class="{ 'activelink': $route.path === '/'}"><i class="users icon"></i>ความนิยม</a>
         <a class="item" v-link="{ path: '/topics', activeClass: 'activelink'}"><i class="talk icon"></i>หัวข้อสนทนา</a>
         <a class="item" v-link="{ path: '/add', activeClass: 'activelink'}"><i class="add cicle icon"></i>เพิ่ม</a>
         <div class="right menu">
@@ -103,7 +104,7 @@ export default {
   }
 
   .activelink{
-    background: #21ba45 !important;
+    background: #8bc34a !important;
     color: #FFF !important;
   }
 </style>

@@ -6,7 +6,7 @@
       <button @click="increment">+</button>
       <button>-</button> -->
       <!-- Open popular topic -->
-      <div class="ui segment teal" style="background:#3381a7; color:#FFF">
+      <div class="ui segment teal" style="background:#61a5c5; color:#FFF">
         <h1 class="ui algin center teal">บทสนทนายอดนิยมในขณะนี้</h1>
       </div>
       <div id="event-list">
@@ -44,7 +44,7 @@
 
 
       <!-- Close oppular topic -->
-      <div class="ui segment teal" style="background:#3381a7; color:#FFF">
+      <div class="ui segment teal" style="background:#61a5c5; color:#FFF">
         <h1 class="ui algin center yellow ">บทสนทนายอดนิยมที่สิ้นสุดแล้ว</h1>
       </div>
       <div id="event-list">

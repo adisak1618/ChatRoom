@@ -5,12 +5,12 @@
       <!-- ADD {{count}}
       <button @click="increment">+</button>
       <button>-</button> -->
-      <div class="ui segment">
+      <div id="eventList" class="ui segment">
         <button v-link="{ path: '/add'}" class="ui positive button">
           <i class="plus icon"></i>
           เพิ่มหัวข้อสนทนา
         </button>
-        <div class="ui buttons right">
+        <div class="ui toggle buttons right">
           <button @click="getEvent('')" class="ui button active positive">เปิด</button>
           <div class="or" data-text="or"></div>
           <button @click="getCloseEvent('')" class="ui button ">ปิด</button>
@@ -87,15 +87,6 @@ export default {
   #Events{
     padding: 20px;
   }
-  .header {
-    font-size: 30px !important;
-  }
-  .description{
-    font-size: 20px !important;
-  }
-  .content {
-    font-size: 18px !important
-  }
   .extra{
     color: #555;
     font-weight: bold;
@@ -106,7 +97,19 @@ export default {
   .segment{
     overflow: hidden;
   }
-  a div.button {
-    font-size: 18px !important;
+  #eventList .toggle .button{
+    font-size: 28px !important;
+    padding: 0 15px !important;
+    font-family: 'THSarabunNew' !important;
+    font-weight: bold;
+  }
+  #eventList  .button{
+    font-size: 28px !important;
+    font-family: 'THSarabunNew' !important;
+    font-weight: bold;
+  }
+  #eventList .or{
+    font-size: 16px !important;
+    font-weight: bold !important;
   }
 </style>
